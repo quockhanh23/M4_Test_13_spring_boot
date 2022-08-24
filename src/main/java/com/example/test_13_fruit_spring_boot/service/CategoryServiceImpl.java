@@ -24,11 +24,11 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public void save(Category category) {
-
+        categoryRepository.save(category);
     }
 
     @Override
     public void remove(Long id) {
-
+        categoryRepository.deleteById(id);
     }
 }
